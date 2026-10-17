@@ -1,0 +1,172 @@
+[10/16/2026 2:00 AM] mar: <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maritu Enyew | Software Engineering</title>
+    <link rel="stylesheet" href="stayle.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="#home" class="logo">Maritu <span>Enyew</span></a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false">☰</button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+
+            <h1>Hello, I'm <span>Maritu Enyew</span></h1>
+
+            <h2>Software Engineering Student</h2>
+
+            <p class="subtitle">3rd Year | 2nd Semester</p>
+
+            <p>
+                I am learning programming and web development.
+                My current coursework includes C++ I & II, HTML,
+                CSS, Java, JavaScript, PHP, and Python.
+                I want to build useful software and prepare
+                for an internship opportunity.
+            </p>
+            
+
+            <a href="#projects" class="btn">View My Project</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+
+        <div class="profile-container">
+            <img src="../image/photo_2026-03-11_09-10-10 (2).jpg"
+                 alt="Maritu Enyew profile photo"
+                 class="profile-photo"
+                 onerror="this.style.display='none';
+                 document.getElementById('photoFallback').style.display='grid';">
+
+            <div id="photoFallback" class="photo-fallback">ME</div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About <span>Me</span></h2>
+
+        <p>
+            My name is Maritu Enyew. I am a third-year,
+            second-semester Software Engineering student.
+            I am developing my programming, problem-solving,
+            and web development skills through coursework
+            and practical projects.
+        </p>
+
+        <p>
+            My goal is to build real projects, improve my
+            technical skills, and prepare for software
+            engineering internship opportunities.
+        </p>
+    </section>
+
+    <section id="skills" class="section skills-section">
+        <h2>My <span>Skills & Coursework</span></h2>
+
+        <div class="skills-grid">
+            <article class="skill-card">
+                <h3>C++ I & II</h3>
+                <p>Programming and object-oriented concepts.</p>
+            </article>
+
+            <article class="skill-card">
+                <h3>HTML</h3>
+                <p>Creating web page structure.</p>
+            </article>
+
+            <article class="skill-card">
+                <h3>CSS</h3>
+                <p>Styling and responsive web design.</p>
+            </article>
+
+            <article class="skill-card">
+                <h3>Java</h3>
+                <p>Learning application programming.</p>
+            </article>
+
+            <article class="skill-card">
+                <h3>JavaScript</h3>
+                <p>Making websites interactive.</p>
+            </article>
+
+            <article class="skill-card">
+                <h3>PHP</h3>
+                <p>Learning backend web development.</p>
+            </article>
+
+            <article class="skill-card">
+                <h3>Python</h3>
+                <p>Programming logic and problem-solving.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>My <span>Project</span></h2>
+
+        <article class="project-card">
+            <h3>Student Management System</h3>
+[10/16/2026 2:00 AM] mar: <p>
+                A learning project planned to manage student
+                information. Intended features include adding,
+                viewing, searching, editing, and deleting records.
+            </p>
+
+            <p><strong>Planned technologies:</strong>
+                HTML, CSS, and JavaScript.
+            </p>
+
+            <p class="status">
+                Status: In development / planned
+            </p>
+
+            <!-- Add a real repository or demo link when available. -->
+        </article>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <h2>Contact <span>Me</span></h2>
+
+        <p>
+            Thank you for visiting my portfolio.
+            You can add your professional contact details here.
+        </p>
+
+        <p>Email: Add your email address</p>
+
+        <a href="https://github.com/"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn">Visit GitHub</a>
+    </section>
+</main>
+
+<footer>
+    <p>
+        &copy; <span id="year"></span> Maritu Enyew.
+        Software Engineering Student.
+    </p>
+</footer>
+
+</body>
+</html>

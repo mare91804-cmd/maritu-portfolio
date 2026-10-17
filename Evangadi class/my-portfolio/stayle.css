@@ -1,0 +1,440 @@
+[10/16/2026 2:00 AM] mar: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maritu Enyew | Software Engineering</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="#home" class="logo">Maritu <span>Enyew</span></a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false">☰</button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+
+            <h1>Hello, I'm <span>Maritu Enyew</span></h1>
+
+            <h2>Software Engineering Student</h2>
+
+            <p class="subtitle">3rd Year | 2nd Semester</p>
+
+            <p>
+                I am learning programming and web development.
+                My current coursework includes C++ I & II, HTML,
+                CSS, Java, JavaScript, PHP, and Python.
+                I want to build useful software and prepare
+                for an internship opportunity.
+            </p>
+
+            <a href="#projects" class="btn">View My Project</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+
+        <div class="profile-container">
+            <img src="images/profile.jpg"
+                 alt="Maritu Enyew profile photo"
+                 class="profile-photo"
+                 onerror="this.style.display='none';
+                 document.getElementById('photoFallback').style.display='grid';">
+
+            <div id="photoFallback" class="photo-fallback">ME</div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About <span>Me</span></h2>
+
+        <p>
+            My name is Maritu Enyew. I am a third-year,
+            second-semester Software Engineering student.
+            I am developing my programming, problem-solving,
+            and web development skills through coursework
+            and practical projects.
+        </p>
+
+        <p>
+            My goal is to build real projects, improve my
+            technical skills, and prepare for software
+            engineering internship opportunities.
+        </p>
+    </section>
+
+    <section id="skills" class="section skills-section">
+        <h2>My <span>Skills & Coursework</span></h2>
+
+        <div class="skills-grid">
+            <article class="skill-card">
+                <h3>C++ I & II</h3>
+                <p>Programming and object-oriented concepts.</p>
+            </article>
+
+            <article class="skill-card">
+                <h3>HTML</h3>
+                <p>Creating web page structure.</p>
+            </article>
+
+            <article class="skill-card">
+                <h3>CSS</h3>
+                <p>Styling and responsive web design.</p>
+            </article>
+
+            <article class="skill-card">
+                <h3>Java</h3>
+                <p>Learning application programming.</p>
+            </article>
+
+            <article class="skill-card">
+                <h3>JavaScript</h3>
+                <p>Making websites interactive.</p>
+            </article>
+
+            <article class="skill-card">
+                <h3>PHP</h3>
+                <p>Learning backend web development.</p>
+            </article>
+
+            <article class="skill-card">
+                <h3>Python</h3>
+                <p>Programming logic and problem-solving.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>My <span>Project</span></h2>
+
+        <article class="project-card">
+            <h3>Student Management System</h3>
+[10/16/2026 2:00 AM] mar: <p>
+                A learning project planned to manage student
+                information. Intended features include adding,
+                viewing, searching, editing, and deleting records.
+            </p>
+
+            <p><strong>Planned technologies:</strong>
+                HTML, CSS, and JavaScript.
+            </p>
+
+            <p class="status">
+                Status: In development / planned
+            </p>
+
+            <!-- Add a real repository or demo link when available. -->
+        </article>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <h2>Contact <span>Me</span></h2>
+
+        <p>
+            Thank you for visiting my portfolio.
+            You can add your professional contact details here.
+        </p>
+
+        <p>Email: Add your email address</p>
+
+        <a href="https://github.com/"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn">Visit GitHub</a>
+    </section>
+</main>
+
+<footer>
+    <p>
+        &copy; <span id="year"></span> Maritu Enyew.
+        Software Engineering Student.
+    </p>
+</footer>
+
+</body>
+</html>
+[10/16/2026 2:03 AM] mar: * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+    color: #eaf2ff;
+    background: #08172e;
+}
+
+header {
+    background: #050f20;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    max-width: 1150px;
+    min-height: 75px;
+    margin: auto;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span,
+h1 span,
+h2 span {
+    color: #1687ff;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #1687ff;
+}
+
+.menu-toggle {
+    display: none;
+    padding: 5px 10px;
+    background: transparent;
+    color: white;
+    border: 1px solid #42658e;
+    border-radius: 5px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.hero {
+    max-width: 1150px;
+    margin: auto;
+    min-height: 540px;
+    padding: 70px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+}
+
+.hero-content {
+    max-width: 670px;
+}
+
+.welcome {
+    color: #69b5ff;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+h1 {
+    font-size: clamp(34px, 5vw, 54px);
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    color: #d6e5fa;
+    font-size: 23px;
+}
+
+.subtitle {
+    color: #8ebeff;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.hero-content > p:not(.welcome):not(.subtitle) {
+    color: #bac9de;
+    margin: 20px 0;
+}
+
+.profile-container {
+    flex-shrink: 0;
+    width: 260px;
+    height: 260px;
+}
+
+.profile-photo,
+.photo-fallback {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 0 25px #1687ff55;
+}
+
+.photo-fallback {
+    display: none;
+    place-items: center;
+    background: #153d6d;
+    color: white;
+    font-size: 65px;
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    margin: 8px 8px 0 0;
+    padding: 12px 22px;
+    border-radius: 25px;
+    background: #1687ff;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #1687ff;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0069d9;
+    border-color: #0069d9;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    background: transparent;
+    border-color: #5c8fc5;
+}
+
+.section {
+    padding: 75px 25px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 34px;
+    margin-bottom: 25px;
+}
+
+#about {
+    background: white;
+    color: #172c4b;
+}
+
+#about p {
+    max-width: 800px;
+    margin: 12px auto;
+}
+
+.skills-section {
+    background: #f1f6fd;
+    color: #142544;
+}
+
+.skills-grid {
+    max-width: 1050px;
+    margin: 30px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    padding: 25px 20px;
+    background: white;
+    border: 1px solid #d9e5f4;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px #0a2c5010;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px #0a2c5020;
+}
+
+.skill-card h3 {
+    color: #0878ec;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    color: #52627a;
+}
+
+.project-card {
+    max-width: 750px;
+    margin: 25px auto 0;
+    padding: 30px;
+    background: #102746;
+    border: 1px solid #284c76;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.project-card h3 {
+    color: #69b5ff;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    margin-bottom: 12px;
+}
+
+.status {
+    color: #ffd27c;
+    font-weight: bold;
+}
+
+.contact-section {
+    background: #0d2342;
+}
+
+.contact-section p {
+    margin: 15px 0;
+}
+
+footer {
+    padding: 25px;
+    background: #040b17;
+    text-align: center;
+    color: #bdcce0;
+}
+
+@media (max-width: 800px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center; 
+    }
